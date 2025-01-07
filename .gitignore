@@ -1,0 +1,103 @@
+.DS_Store
+node_modules
+/dist
+
+
+# local env files
+.env.local
+.env.*.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Golang
+# 二进制文件
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# 测试二进制文件
+*.test
+
+# 覆盖率测试输出
+*.out
+*.prof
+
+# 依赖目录
+/vendor/
+/Godeps/
+
+# Go工作区文件
+go.work
+
+# 编译输出目录
+/bin/
+/pkg/
+/dist/
+
+# IDE 相关
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+*.iml
+
+# 日志文件
+*.log
+
+# 环境变量文件
+.env
+.env.local
+.env.*.local
+
+# 临时文件
+tmp/
+temp/
+
+# 配置文件（根据需要调整）
+# config.yaml
+# config.json
+
+# 证书文件
+*.pem
+*.key
+*.crt
+
+# 数据库文件
+*.db
+*.sqlite
+
+# 缓存文件
+.cache/
+
+# Air 实时重载工具的临时文件
+tmp/
+
+# 调试文件
+__debug_bin
+debug
+
+# 自动生成的文件
+*.pb.go
+*.mock.go
+
+# 其他
+.DS_Store
+Thumbs.db
+
+

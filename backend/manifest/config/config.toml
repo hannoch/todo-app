@@ -1,0 +1,4 @@
+[database]
+  [database.default]
+  type = "sqlite"
+  link = "file:./data.db?cache=shared&mode=rwc" 
