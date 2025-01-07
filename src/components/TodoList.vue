@@ -114,7 +114,9 @@
           </el-table-column>
           <el-table-column prop="due_date" label="截止日期">
             <template #default="scope">
-              {{ formatDate(scope.row.due_date) }}
+              <span class="date-display">
+                {{ formatDate(scope.row.due_date) || '-' }}
+              </span>
             </template>
           </el-table-column>
           <el-table-column label="分类" prop="category_id" min-width="120">
@@ -349,7 +351,7 @@ const handleStatusChange = async (todo: Todo) => {
 
 // 添加日期格式化函数
 const formatDate = (date: string | Date | null) => {
-  if (!date) return '';
+  if (!date || date === '0001-01-01') return '-';
   if (typeof date === 'string') return date;
   return date.toISOString().split('T')[0];
 };
@@ -587,5 +589,11 @@ onMounted(async () => {
 /* 添加表格容器样式 */
 .el-table {
   margin-bottom: 16px;
+}
+
+.date-display {
+  text-align: center; /* 居中显示 */
+  display: inline-block; /* 使其成为块级元素以支持居中 */
+  width: 100%; /* 使其占满整个单元格宽度 */
 }
 </style> 
