@@ -78,9 +78,9 @@ temp/
 *.key
 *.crt
 
-# 数据库文件
-*.db
-*.sqlite
+# # 数据库文件
+# *.db
+# *.sqlite
 
 # 缓存文件
 .cache/
